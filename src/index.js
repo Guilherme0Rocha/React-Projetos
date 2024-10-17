@@ -13,6 +13,7 @@ import Atletas from "./pages/Atletas";
 import SobreNos from "./pages/SobreNos";
 import Cadastrar from "./pages/Cadastrar";
 import Editar from "./pages/Editar";
+import Excluir from "./pages/Excluir";
 
 const container = document.getElementById("root");
 const root = createRoot(container);
@@ -37,6 +38,7 @@ root.render(
         <Route path="/sobrenos" element={<SobreNos/>} />
         <Route path="/cadastro" element={<Cadastrar/>}/>
         <Route path="/edicao" element={<Editar/>}/>
+        <Route path="/exclusao" element={<Excluir/>}/>
       </Routes>
     </HashRouter>
   </React.StrictMode>

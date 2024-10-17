@@ -16,6 +16,8 @@
   --botao1: rgb(245, 172, 0);
   --botaoHover: rgb(252, 234, 191);
   --headerAzul: rgb(0, 37, 85);
+  --cancelar: rgb(245, 49, 0);
+  --cancelarHover: rgb(252, 191, 191);
 
 
 /*  --primaria: hsla(0, 1%, 20%, 1);
@@ -128,4 +130,55 @@ input {
 #login {
   position: relative;
   margin-left: 37px;
+}
+
+.confirmar {
+  position: relative;
+  margin-left: 57px;
+  padding: .3em;
+  min-width: 6em;
+  background-color: var(--botao1);
+  text-decoration: none;
+  color: var(--detalhe);
+  text-transform: uppercase;
+  border-radius: .3em;
+  font-family: 'Krub', sans-serif;
+  font-weight: 600;
+  &:hover{
+    background-color: var(--botaoHover);
+  }
+}
+
+.cancelar {
+  position: relative;
+  margin-left: 20px;
+  padding: .3em;
+  min-width: 6em;
+  background-color: var(--cancelar);
+  text-decoration: none;
+  color: var(--detalhe);
+  text-transform: uppercase;
+  border-radius: .3em;
+  font-family: 'Krub', sans-serif;
+  font-weight: 600;
+  &:hover{
+    background-color: var(--cancelarHover);
+  }
+}
+
+.botao {
+  position:relative;
+  padding: .3em;
+  min-width: 6em;
+  background-color: var(--botao1);
+  text-decoration: none;
+  color: var(--detalhe);
+  text-transform: uppercase;
+  border-radius: .3em;
+  font-family: 'Krub', sans-serif;
+  font-weight: 600;
+  margin-top: 260px; /* Adiciona espaço para ficar abaixo da .headerAzul */
+  &:hover{
+    background-color: var(--botaoHover);
+  }
 }

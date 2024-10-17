@@ -9,7 +9,7 @@ const Header = () => (
       <>
         <Link to="/logout">Logout</Link>
         <Link to="/cadastro">Cadastro</Link>
-        <Link to="/edicao">Edição</Link>
+        {/*<Link to="/edicao">Edição</Link>*/}
       </>
       ) : null}
     {/*<Link to="/fotos">Fotos</Link>
