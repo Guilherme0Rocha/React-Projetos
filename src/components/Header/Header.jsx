@@ -3,7 +3,7 @@ import { Top } from "./Style";
 
 const Header = () => (
   <Top>
-    <a href="https://www.ibmec.br" target="_blank" rel="noopener noreferrer">
+    <a href="https://www.ibmec.br" id="logo">
       <img 
         src="https://www.institutomillenium.org.br/wp-content/uploads/2024/02/logo-ibmec-topo-rj-450x150.png" 
         width="90" 
@@ -12,11 +12,11 @@ const Header = () => (
         alt="Logo IBMEC"
       />
     </a>
-    <Link to="/">Projetos</Link>
+    <Link to="/" class="nav">Projetos</Link>
     {window.sessionStorage.getItem('accessToken') ? (
       <>
-        <Link to="/logout">Logout</Link>
-        <Link to="/cadastro">Cadastro</Link>
+        <Link to="/logout" class="nav">Logout</Link>
+        <Link to="/cadastro" class="nav">Cadastro</Link>
       </>
     ) : null}
   </Top>
