@@ -10,15 +10,16 @@ const Header = () => (
         height="30" 
         class="logo" 
         alt="Logo IBMEC"
+        style={{marginBottom: "-1.6em", display:"inline-block"}}
       />
     </a>
-    <Link to="/" class="nav">Projetos</Link>
     {window.sessionStorage.getItem('accessToken') ? (
       <>
         <Link to="/logout" class="nav">Logout</Link>
         <Link to="/cadastro" class="nav">Cadastro</Link>
       </>
     ) : null}
+    <Link to="/" class="nav">Projetos</Link>
   </Top>
 );
 
