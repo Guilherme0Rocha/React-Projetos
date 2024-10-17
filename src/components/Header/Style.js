@@ -6,7 +6,7 @@ const Top = styled.header`
   display: flex;
   flex-direction: row;
   margin: 0;
-  a {
+  .nav {
     text-align: center;
     padding: .3em;
     margin: 0 .7em;
@@ -21,7 +21,7 @@ const Top = styled.header`
       background-color: var(--botaoHover);
     }
   }
-  .logo {
+  #logo {
     margin-right: 40px
   }
 `
