@@ -177,7 +177,7 @@ input {
   border-radius: .3em;
   font-family: 'Krub', sans-serif;
   font-weight: 600;
-  margin-top: 260px; /* Adiciona espaço para ficar abaixo da .headerAzul */
+  margin-top: 260px;
   &:hover{
     background-color: var(--botaoHover);
   }
