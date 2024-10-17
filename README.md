@@ -1,4 +1,4 @@
-# React Base Project
+# React Base Project 
 
 Esse é um projeto de uma aplicação base usando React e Firebase construído com motivações didáticas.
 
