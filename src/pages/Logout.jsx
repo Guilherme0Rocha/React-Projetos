@@ -15,8 +15,10 @@ const Logout = () => {
 
   return (
     <Base>
-      <h1>Logout</h1>
-      <button onClick={handleLogout}>Logout</button>
+      <div class="headerAzul">
+        <h1>Logout</h1>
+        <button onClick={handleLogout} id="logout">Logout</button>
+      </div>
     </Base>
   )
 }

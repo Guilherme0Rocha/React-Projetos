@@ -10,17 +10,19 @@ const Top = styled.header`
     text-align: center;
     padding: .3em;
     margin: 0 .7em;
-    min-width: 5em;
-    background-color: var(--background);
+    min-width: 6em;
+    background-color: var(--botao1);
     text-decoration: none;
     font-weight: bold;
     color: var(--detalhe);
     text-transform: uppercase;
-    /*border-radius: .3em;*/
+    border-radius: .3em;
     &:hover{
-      background-color: var(--destaque);
-      color: var(--secundaria);
+      background-color: var(--botaoHover);
     }
+  }
+  .logo {
+    margin-right: 40px
   }
 `
 

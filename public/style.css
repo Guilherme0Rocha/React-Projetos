@@ -2,15 +2,20 @@
 
 @import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
 
+@import url('https://fonts.googleapis.com/css2?family=Krub:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;1,200;1,300;1,400;1,500;1,600;1,700&display=swap');
+
 :root {
   /* CSS HSL */
   /* https://coolors.co/ */
 
-  --primaria: rgb(214, 214, 214);
-  --background: rgb(12, 0, 46);
-  --secundaria: rgb(28, 33, 77);
+  --primaria: rgb(0, 0, 0);
+  --background: rgb(215, 215, 215);
+  --secundaria: rgb(215, 215, 215);
   --destaque: rgb(204, 204, 211);
-  --detalhe: rgb(68, 81, 131);
+  --detalhe: rgb(0, 0, 0);
+  --botao1: rgb(245, 172, 0);
+  --botaoHover: rgb(252, 234, 191);
+  --headerAzul: rgb(0, 37, 85);
 
 
 /*  --primaria: hsla(0, 1%, 20%, 1);
@@ -29,19 +34,98 @@
 
 body {
   margin: 0;
-  font-family: 'Lora', serif;
+  font-family: 'Krub', serif;
   background-color: var(--background);
   color:var(--primaria);
+  overflow-y: scroll;
+  overflow-x: hidden;
 }
 
 a {
-  font-family: 'Roboto', sans-serif;
+  font-family: 'Krub', sans-serif;
+  font-weight: 400;
 }
 
 div.container {
   padding: 1rem;
 }
 
-h1,h2,h3,h4,h5,h6{
+h1 {
+  margin-left:40px;
+  font-weight:500;
+  padding:0;
+  position: relative;
+  top: 20px;
+  left: 15px;
+  font-size: 45px;
+}
+
+h3 {
+  margin-left:40px;
+  font-weight:500;
+  padding:0;
+  position: relative;
+  top: -5px;
+  left: 17px;
+}
+
+.headerAzul {
+  background-color: var(--headerAzul);
+  color: var(--secundaria);
+  width: 100vw;
   margin: 0;
+  padding: 0;
+  position: fixed;
+  left: 0;
+  height: 250px;
+
+}
+
+#logout {
+  position: relative;
+  left:17px;
+  margin-left:40px;
+}
+
+button {
+  position: relative;
+  left: 17;
+  margin-left: 20px;
+  text-align: center;
+  padding: .3em;
+  min-width: 6em;
+  background-color: var(--botao1);
+  text-decoration: none;
+  font-weight: bold;
+  color: var(--detalhe);
+  text-transform: uppercase;
+  border-radius: .3em;
+  font-family: 'Krub', sans-serif;
+  font-weight: bold;
+  &:hover{
+    background-color: var(--botaoHover);
+  }
+}
+
+input {
+  position: relative;
+  left: 17;
+  margin-left: 20px;
+  padding: .3em;
+  min-width: 6em;
+  background-color: var(--botao1);
+  text-decoration: none;
+  color: var(--detalhe);
+  text-transform: uppercase;
+  border-radius: .3em;
+  font-family: 'Krub', sans-serif;
+  font-weight: 600;
+  &:hover{
+    background-color: var(--botaoHover);
+  }
+}
+
+#login {
+  position: relative;
+  margin-left: 37px;
 }
