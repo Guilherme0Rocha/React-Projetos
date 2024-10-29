@@ -18,6 +18,8 @@
   --headerAzul: rgb(0, 37, 85);
   --cancelar: rgb(245, 49, 0);
   --cancelarHover: rgb(252, 191, 191);
+  --footer1: rgb(9, 35, 128);
+  --footer:rgb(33, 57, 141);
 
 
 /*  --primaria: hsla(0, 1%, 20%, 1);
@@ -41,6 +43,9 @@ body {
   color:var(--primaria);
   overflow-y: scroll;
   overflow-x: hidden;
+  display:flex;
+  flex-direction: row;
+  min-height:100vh;
 }
 
 a {
@@ -178,7 +183,7 @@ input {
   text-transform: uppercase;
   border-radius: .3em;
   font-family: 'Krub', sans-serif;
-  font-weight: 600; 
+  font-weight: 600;
   &:hover{
     background-color: var(--botaoHover);
   }
@@ -187,4 +192,22 @@ input {
 .pagina {
   margin-top: 50px;
   margin-left: 30px;
+}
+
+.footer {
+  background-color: var(--footer);
+}
+
+.footer1 {
+  background-color: var(--footer1);
+  flex:1;
+}
+
+.grid-container {
+  display: grid;
+  grid-template-columns: auto auto auto auto;
+  gap: 20px;
+  padding: 10px;
+  align-items: center;
+  justify-content: center;
 }
