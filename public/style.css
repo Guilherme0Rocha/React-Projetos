@@ -6,34 +6,6 @@
 
 
 
-/* Estilos gerais para todos os dispositivos */
-body {
-  font-family: 'krub', serif;
-  color: var(--primaria);
-}
-
-/* Estilos para dispositivos com largura de tela de até 768px (tablets e celulares) */
-@media (max-width: 768px) {
-  body {
-      font-size: 14px;
-  }
-  .menu {
-      display: none;
-  }
-}
-
-/* Estilos para dispositivos com largura de tela de até 480px (celulares) */
-@media (max-width: 480px) {
-  body {
-      font-size: 12px;
-  }
-  .header {
-      text-align: center;
-  }
-}
-
-
-
 :root {
   /* CSS HSL */
   /* https://coolors.co/ */
@@ -65,6 +37,12 @@ body {
   outline: red solid 1px;
 }
 */
+
+/* Estilos gerais para todos os dispositivos */
+body {
+  font-family: 'krub', serif;
+  color: var(--primaria);
+}
 
 body {
   margin: 0;
@@ -241,4 +219,39 @@ main {
   padding: 10px;
   align-items: center;
   justify-content: center;
+}
+
+.footer > img {
+  padding: 1rem 0px 1rem 15rem
+}
+
+/* Estilos para dispositivos com largura de tela de até 768px (tablets e celulares) */
+@media (max-width: 768px) {
+  body {
+      font-size: 14px;
+  }
+
+  .grid-container {
+    grid-template-columns: auto auto;
+  }
+
+  .footer > img {
+    padding: 1rem 0px 1rem 5rem
+  }
+}
+
+/* Estilos para dispositivos com largura de tela de até 480px (celulares) */
+@media (max-width: 480px) {
+  body {
+      font-size: 12px;
+  }
+
+  .grid-container {
+    grid-template-columns: auto;
+  }
+
+  .footer > img {
+    padding: 1rem 0px 1rem 3rem
+  }
+
 }

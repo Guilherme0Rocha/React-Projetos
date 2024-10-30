@@ -11,7 +11,6 @@ const Base = (props) => (
     <div class="footer">
       <img
         src="https://cdn.portal.estacio.br/Ibmec_logo_branco_97adecdb45.svg"
-        style={{padding: "1rem 0 1rem 15rem"}}
       />
     </div>
     <div class="footer1">
