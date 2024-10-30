@@ -39,8 +39,8 @@ body {
   /* https://coolors.co/ */
 
   --primaria: rgb(0, 0, 0);
-  --background: rgb(215, 215, 215);
-  --secundaria: rgb(215, 215, 215);
+  --background: rgb(255, 255, 255);
+  --secundaria: rgb(255, 255, 255);
   --destaque: rgb(204, 204, 211);
   --detalhe: rgb(0, 0, 0);
   --botao1: rgb(245, 172, 0);
@@ -48,6 +48,8 @@ body {
   --headerAzul: rgb(0, 37, 85);
   --cancelar: rgb(245, 49, 0);
   --cancelarHover: rgb(252, 191, 191);
+  --footer1: rgb(9, 35, 128);
+  --footer:rgb(33, 57, 141);
 
 
 /*  --primaria: hsla(0, 1%, 20%, 1);
@@ -71,15 +73,19 @@ body {
   color:var(--primaria);
   overflow-y: scroll;
   overflow-x: hidden;
+  display:flex;
+  flex-direction: column;
+  min-height:100vh;
 }
 
 a {
   font-family: 'Krub', sans-serif;
   font-weight: 400;
+  margin-bottom: -4px;
 }
 
 div.container {
-  padding: 1rem;
+  padding: 0rem;
 }
 
 h1 {
@@ -107,9 +113,11 @@ h3 {
   width: 100vw;
   margin: 0;
   padding: 0;
-  position: fixed;
+  position: relative;
   left: 0;
   height: 250px;
+  flex: 1;
+  margin-top: 2em;
 
 }
 
@@ -148,7 +156,6 @@ input {
   background-color: var(--botao1);
   text-decoration: none;
   color: var(--detalhe);
-  text-transform: uppercase;
   border-radius: .3em;
   font-family: 'Krub', sans-serif;
   font-weight: 600;
@@ -207,8 +214,31 @@ input {
   border-radius: .3em;
   font-family: 'Krub', sans-serif;
   font-weight: 600;
-  margin-top: 260px;
   &:hover{
     background-color: var(--botaoHover);
   }
+}
+
+main {
+  margin-top: 50px;
+  margin-left: 30px;
+  flex: 1;
+}
+
+.footer {
+  background-color: var(--footer);
+}
+
+.footer1 {
+  background-color: var(--footer1);
+  min-height: 50px;
+}
+
+.grid-container {
+  display: grid;
+  grid-template-columns: auto auto auto auto;
+  gap: 20px;
+  padding: 10px;
+  align-items: center;
+  justify-content: center;
 }
