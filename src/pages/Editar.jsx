@@ -10,6 +10,9 @@ const Editar = () => {
                 <h1>Editar projeto</h1>
                 <h3>Mude as informações do formulário para editar um projeto existente.</h3>
             </div>
+            <main>
+
+            </main>
             </Protegida>
         </>
       )

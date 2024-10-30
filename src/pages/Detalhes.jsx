@@ -29,9 +29,9 @@ const Home = () => {
       </>
         ) : null}
       </div>
-      <div class="pagina">
-        
-      </div>
+      <main>
+
+      </main>
     </Base>
   )
 }

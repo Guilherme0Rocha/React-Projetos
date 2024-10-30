@@ -10,7 +10,6 @@ import Logout from "./pages/Logout";
 import { auth } from "./config/Firebase";
 import { onAuthStateChanged } from "firebase/auth";
 import Atletas from "./pages/Atletas";
-import SobreNos from "./pages/SobreNos";
 import Cadastrar from "./pages/Cadastrar";
 import Editar from "./pages/Editar";
 import Excluir from "./pages/Excluir";
@@ -32,11 +31,8 @@ root.render(
     <HashRouter>
       <Routes>
         <Route path="/" element={<Home/>} />
-        <Route path="/fotos" element={<Fotos/>} />
-        <Route path="/atletas" element={<Atletas/>} />
         <Route path="/login" element={<Login/>} />
         <Route path="/logout" element={<Logout/>} />
-        <Route path="/sobrenos" element={<SobreNos/>} />
         <Route path="/cadastro" element={<Cadastrar/>}/>
         <Route path="/edicao" element={<Editar/>}/>
         <Route path="/exclusao" element={<Excluir/>}/>

@@ -117,7 +117,7 @@ const Home = () => {
         <h1>Projetos</h1>
         <h3>Encontre aqui os projetos dos alunos do IBMEC.</h3>
       </div>
-      <div class="pagina">
+      <main>
 
         <div class="grid-container">
 
@@ -133,7 +133,7 @@ const Home = () => {
 
           }
         </div>
-      </div>
+      </main>
     </Base>
   )
 }

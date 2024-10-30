@@ -44,7 +44,7 @@ body {
   overflow-y: scroll;
   overflow-x: hidden;
   display:flex;
-  flex-direction: row;
+  flex-direction: column;
   min-height:100vh;
 }
 
@@ -189,9 +189,10 @@ input {
   }
 }
 
-.pagina {
+main {
   margin-top: 50px;
   margin-left: 30px;
+  flex: 1;
 }
 
 .footer {
@@ -200,7 +201,7 @@ input {
 
 .footer1 {
   background-color: var(--footer1);
-  flex:1;
+  min-height: 50px;
 }
 
 .grid-container {

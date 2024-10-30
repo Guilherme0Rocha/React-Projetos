@@ -12,6 +12,9 @@ const Excluir = () => {
                     <h3>Tem certeza que quer excluir esse projeto?</h3>
                     <Link to="/" class="confirmar" id="conf1">Confirmar</Link> <Link to="/" class="cancelar">Cancelar</Link>
                 </div>
+                <main>
+
+                </main>
             </Protegida>
         </>
       )
