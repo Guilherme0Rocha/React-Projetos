@@ -6,7 +6,7 @@ Esse é um projeto de uma aplicação base usando React e Firebase construído c
 ## Dependências
 
 - https://nodejs.org/en : Necessário para rodar o projeto localmente.
-- https://git-scm.com/ : Necessário para versionar as modificações no projeto
+- https://git-scm.com/ : Necessário para versionar as modificações no projeto.
 
 
 ## Instalação
