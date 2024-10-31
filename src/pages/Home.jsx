@@ -1,12 +1,20 @@
 import { onAuthStateChanged } from "firebase/auth"
 import Base from "./Base"
 import { auth } from "../config/Firebase";
-import { useEffect } from "react";
+import { useEffect, useState } from "react";
 import { Link } from "react-router-dom";
 import ProjetoCard from "../components/ProjetoCard/ProjetoCard";
 import dados from "../data/projetos.js"
 
+
 const Home = () => {
+  const [dadosFiltrados, setDados] = useState(dados);
+  
+  const filtra = (entrada) => {
+  setDados(dados.filter(
+    (ele) => ele.titulo.toLowerCase().includes(entrada.toLowerCase()) || ele.texto.toLowerCase().includes(entrada.toLowerCase()) || ele.membros.toLowerCase().includes(entrada.toLowerCase()) || ele.data.toLowerCase().includes(entrada.toLowerCase()) || ele.tecnologias.toLowerCase().includes(entrada.toLowerCase())
+  ))
+}
 
   return (
     <Base>
@@ -17,7 +25,13 @@ const Home = () => {
       <main>
         <form style={{display:"flex", flexDirection:"column"}}>
           <div class="searchBox">
-            <input class="search" name="search" placeholder="Digite algo para buscar..."></input>
+            <input 
+              class="search" 
+              type="text"
+              name="search" 
+              placeholder="Digite algo para buscar..."
+              onChange={ (e) => filtra(e.target.value)}
+            ></input>
             <input class= "searchButton" type="submit" value="Pesquisar"></input>
           </div>
           <p class="pFilter">Filtrar por:</p>
@@ -64,7 +78,7 @@ const Home = () => {
         <div class="grid-container">
 
           {
-              dados.map((ele,i) => (
+              dadosFiltrados.map((ele,i) => (
                 <ProjetoCard
                     key={i}
                     id={ele.id}
