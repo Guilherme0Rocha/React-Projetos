@@ -14,6 +14,7 @@ import Cadastrar from "./pages/Cadastrar";
 import Editar from "./pages/Editar";
 import Excluir from "./pages/Excluir";
 import SobreProjeto from "./pages/SobreProjeto";
+import SobreNos from "./pages/SobreNos";
 
 const container = document.getElementById("root");
 const root = createRoot(container);
@@ -37,6 +38,7 @@ root.render(
         <Route path="/edicao" element={<Editar/>}/>
         <Route path="/exclusao" element={<Excluir/>}/>
         <Route path="/sobre" element={<SobreProjeto/>}/>
+        <Route path="/sobreNos" element={<SobreNos/>}/>
       </Routes>
     </HashRouter>
   </React.StrictMode>
