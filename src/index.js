@@ -38,7 +38,7 @@ root.render(
         <Route path="/edicao" element={<Editar/>}/>
         <Route path="/exclusao" element={<Excluir/>}/>
         <Route path="/sobre" element={<SobreProjeto/>}/>
-        <Route path="/sobre/:key" element={<SobreProjeto/>}/>
+        <Route path="/sobre/:id" element={<SobreProjeto/>}/>
         <Route path="/sobreNos" element={<SobreNos/>}/>
       </Routes>
     </HashRouter>

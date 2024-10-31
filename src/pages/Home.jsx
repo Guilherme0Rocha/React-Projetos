@@ -67,6 +67,7 @@ const Home = () => {
               dados.map((ele,i) => (
                 <ProjetoCard
                     key={i}
+                    id={ele.id}
                     titulo={ele.titulo}
                     texto={ele.texto}
                     imagem={ele.imagem}/>

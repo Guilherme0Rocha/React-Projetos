@@ -6,7 +6,7 @@ const ProjetoCard = (props) => (
         <Titulo>{props.titulo}</Titulo>
         <Texto>{props.texto}</Texto>
         <Imagem src={props.imagem} width="90%"></Imagem>
-        <Link to="/sobre" class="botao" style={{
+        <Link to={`/sobre/${props.id}`} class="botao" style={{
             marginLeft: "0.9em",
             marginRight: "0.9em",
             marginTop: "0.5em",
