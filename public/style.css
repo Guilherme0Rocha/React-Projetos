@@ -340,6 +340,44 @@ main {
   margin-left: 5.7rem
 }
 
+.title3 {
+  margin-left:-1rem;
+  margin-top: -.5rem;
+}
+
+.detalhes {
+  display:flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  align-items: flex-start;
+  justify-content: center;
+}
+
+.detalhesBox {
+  position: relative;
+  padding: 0em 2em 0em 1em;
+  max-width: max-content;
+  background-color: var(--destaque);
+  text-decoration: none;
+  color: var(--detalhe);
+  border-radius: .9em;
+  font-family: 'Krub', sans-serif;
+  font-weight: 600;
+  text-align: left;
+  margin-bottom: 1rem;
+  margin-left: 2rem;
+  height: fit-content;
+
+}
+
+#imgProjeto {
+  width:40%;
+  border-radius:.5rem;
+  margin-bottom:2rem;
+  align-self: center;
+}
+
+
 /* Estilos para dispositivos com largura de tela de até 768px (tablets e celulares) */
 @media (max-width: 768px) {
   body {
@@ -386,6 +424,10 @@ main {
     font-family: 'Krub', sans-serif;
     font-weight: 600;
     text-align: left;
+  }
+
+  #imgProjeto {
+    width:60%
   }
 }
 

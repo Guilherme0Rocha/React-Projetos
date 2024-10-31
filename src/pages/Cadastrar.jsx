@@ -11,7 +11,6 @@ const Cadastrar = () => {
                 <h3>Preencha o formulário para cadastrar um novo projeto manualmente.</h3>
             </div>
             <div class="pagina">
-
             </div>
             </Protegida>
         </>

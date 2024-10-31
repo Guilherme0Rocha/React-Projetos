@@ -89,5 +89,17 @@ const dados = [
         texto: "Descrição do projeto",
         imagem: "https://wallpapercave.com/wp/wp1809101.jpg",
     },
+    {
+      titulo: "Projeto 19",
+      texto: "Descrição do projeto",
+      imagem: "https://wallpapercave.com/wp/wp1809101.jpg",
+    },
+    {
+      titulo: "Projeto 20",
+      texto: "Descrição do projeto",
+      imagem: "https://wallpapercave.com/wp/wp1809101.jpg",
+    },
 
-  ]
+]
+
+export default dados
