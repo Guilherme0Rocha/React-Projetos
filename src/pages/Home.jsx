@@ -4,12 +4,14 @@ import { auth } from "../config/Firebase";
 import { useEffect, useState } from "react";
 import { Link } from "react-router-dom";
 import ProjetoCard from "../components/ProjetoCard/ProjetoCard";
-import dados from "../data/projetos.js"
+import dados from "../data/projetos.js";
+import Filtros from "../components/Filtros/Filtros.jsx";
+import ListaProjeto from "../components/ListaProjeto/ListaProjeto.jsx";
 
 
 const Home = () => {
   const [dadosFiltrados, setDados] = useState(dados);
-  
+
   const filtra = (entrada) => {
   setDados(dados.filter(
     (ele) => ele.titulo.toLowerCase().includes(entrada.toLowerCase()) || ele.texto.toLowerCase().includes(entrada.toLowerCase()) || ele.membros.toLowerCase().includes(entrada.toLowerCase()) || ele.data.toLowerCase().includes(entrada.toLowerCase()) || ele.tecnologias.toLowerCase().includes(entrada.toLowerCase())
@@ -23,76 +25,13 @@ const Home = () => {
         <h3>Encontre aqui os projetos dos alunos do IBMEC.</h3>
       </div>
       <main>
-        <form style={{display:"flex", flexDirection:"column"}}>
-          <div class="searchBox">
-            <input 
-              class="search" 
-              type="text"
-              name="search" 
-              placeholder="Digite algo para buscar..."
-              onChange={ (e) => filtra(e.target.value)}
-            ></input>
-            <input class= "searchButton" type="submit" value="Pesquisar"></input>
-          </div>
-          <p class="pFilter">Filtrar por:</p>
-          <div class="filtersBox">
-            <div class="filterBox">
-              <p class="pFilter2">Aluno</p>
-              <select class="filter" id="aluno" name="aluno">
-              <option>Selecionar</option>
-              <option value="aluno1">Aluno 1</option>
-              <option value="aluno2">Aluno 2</option>
-              <option value="aluno3">Aluno 3</option>
-            </select>
-            </div>
-            <div class="filterBox">
-              <p class="pFilter2">Curso</p>
-              <select class="filter" id="curso" name="curso">
-              <option>Selecionar</option>
-              <option value="curso1">Curso 1</option>
-              <option value="curso2">Curso 2</option>
-              <option value="curso3">Curso 3</option>
-            </select>
-            </div>
-            <div class="filterBox">
-              <p class="pFilter2">Tecnologia</p>
-              <select class="filter" id="tecnologia" name="tecnologia">
-              <option>Selecionar</option>
-              <option value="tec1">Tecnologia 1</option>
-              <option value="tec2">Tecnologia 2</option>
-              <option value="tec3">Tecnologia 3</option>
-              </select>
-            </div>
-            <div class="filterBox">
-              <p class="pFilter2">Ano</p>
-              <select class="filter" id="ano" name="ano">
-              <option>Selecionar</option>
-              <option value="2024">2024</option>
-              <option value="2023">2023</option>
-              <option value="2022">2022</option>
-            </select>
-            </div>
-          </div>
-        </form>
-
-        <div class="grid-container">
-
-          {
-              dadosFiltrados.map((ele,i) => (
-                <ProjetoCard
-                    key={i}
-                    id={ele.id}
-                    titulo={ele.titulo}
-                    texto={ele.texto}
-                    imagem={ele.imagem}/>
-
-              ))
-
-          }
-        </div>
+        <Filtros filtra={filtra}/>
+        <ListaProjeto dadosFiltrados={ dadosFiltrados }>
+        </ListaProjeto>
       </main>
     </Base>
   )
 }
 
-export default Home
+
+export default Home;
