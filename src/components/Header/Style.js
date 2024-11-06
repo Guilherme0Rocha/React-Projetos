@@ -26,7 +26,14 @@ const Top = styled.header`
     margin-right: 40px
   }
 
+  @media (max-width: 768px) {
+    margin-right: 2rem;
+  }
+
   @media (max-width: 480px) {
+
+    margin-right: .05rem;
+
     .nav {
       margin-left: .3em;
       min-width: 0em;

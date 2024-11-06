@@ -7,6 +7,7 @@ import ProjetoCard from "../components/ProjetoCard/ProjetoCard";
 import dados from "../data/projetos.js";
 import Filtros from "../components/Filtros/Filtros.jsx";
 import ListaProjeto from "../components/ListaProjeto/ListaProjeto.jsx";
+import Banner from "../components/Banner/Banner.jsx"
 
 
 const Home = () => {
@@ -20,10 +21,7 @@ const Home = () => {
 
   return (
     <Base>
-      <div class="headerAzul">
-        <h1>Projetos</h1>
-        <h3>Encontre aqui os projetos dos alunos do IBMEC.</h3>
-      </div>
+      <Banner titulo={"Projetos"} desc={"Encontre aqui os projetos do IBMEC."}/>
       <main>
         <Filtros filtra={filtra}/>
         <ListaProjeto dadosFiltrados={ dadosFiltrados }>

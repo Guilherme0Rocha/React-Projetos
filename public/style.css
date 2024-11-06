@@ -87,20 +87,6 @@ h3 {
   left: 17px;
 }
 
-.headerAzul {
-  background-color: var(--headerAzul);
-  color: var(--secundaria);
-  width: 100vw;
-  margin: 0;
-  padding: 0;
-  position: relative;
-  left: 0;
-  height: 250px;
-  flex: 1;
-  margin-top: 2em;
-
-}
-
 #logout {
   position: relative;
   left:17px;
@@ -205,19 +191,6 @@ main {
   flex: 1;
   display: flex;
   flex-direction: column;
-}
-
-.footer {
-  background-color: var(--footer);
-}
-
-.footer1 {
-  background-color: var(--footer1);
-  min-height: 50px;
-}
-
-.footer > img {
-  padding: 1rem 0px 1rem 15rem
 }
 
 .membro {

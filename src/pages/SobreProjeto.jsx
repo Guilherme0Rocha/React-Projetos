@@ -1,6 +1,7 @@
 import Base from "./Base"
 import { Link, useParams } from "react-router-dom";
 import dados from "../data/projetos.js"
+import Banner from "../components/Banner/Banner.jsx";
 
 const SobreProjeto = () => {
 
@@ -9,17 +10,16 @@ const SobreProjeto = () => {
     return (
         <>
             <Base>
-                <div class="headerAzul">
-                    <h1>{dados[id-1].titulo}</h1>
-                    <h3>{dados[id-1].texto}</h3>
-                    {window.sessionStorage.getItem('accessToken') ? (
-                    <>
-                        <Link to="/edicao" class="botao" style={{ marginLeft: '57px' }}>Editar</Link>
-                        <Link to="/exclusao" class="botao" style={{ marginLeft: '10px' }}>Excluir</Link>
-                    </>
-                        ) : null}
-                </div>
+                <Banner titulo={dados[id-1].titulo} desc={dados[id-1].texto}/>
                 <main>
+                    <div>
+                        {window.sessionStorage.getItem('accessToken') ? (
+                        <>
+                            <Link to="/edicao" class="botao" style={{ marginLeft: '57px' }}>Editar</Link>
+                            <Link to="/exclusao" class="botao" style={{ marginLeft: '10px' }}>Excluir</Link>
+                        </>
+                            ) : null}
+                    </div>
                     <img id="imgProjeto" src={dados[id-1].imagem}></img>
                     <div class="detalhes">
                         <div class="detalhesBox">

@@ -115,7 +115,7 @@ const Container = styled.div`
     }
 
     .filtersBox {
-        margin-left: 6.25rem;
+        margin-left: 4.25rem;
         margin-bottom:3em;
         display: flex;
         flex-wrap: wrap;
@@ -124,7 +124,7 @@ const Container = styled.div`
 
     .pFilter {
         font-weight:600;
-        margin-left: 6.25rem;
+        margin-left: 4.25rem;
         margin-top:2rem
     }
 

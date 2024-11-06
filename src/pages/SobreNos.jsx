@@ -1,3 +1,4 @@
+import Banner from "../components/Banner/Banner";
 import Base from "./Base"
 import Protegida from "./Protegida";
 
@@ -6,10 +7,7 @@ const SobreNos = () => {
     return (
         <>
             <Base>
-            <div class="headerAzul">
-                <h1>Sobre Nós</h1>
-                <h3>Esse sistema de projetos foi feito pelo grupo Link.</h3>
-            </div>
+            <Banner titulo={"Sobre Nós"} desc={"Esse sistema de projetos foi feito pelo grupo Link."}/>
             <main>
                 <ul style={{alignSelf:"center"}}>
                     <h1 id="titleMembros">Membros do Grupo:</h1>
