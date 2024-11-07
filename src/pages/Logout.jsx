@@ -2,6 +2,7 @@ import { signOut } from "firebase/auth"
 import { auth } from "../config/Firebase";
 import Base from "./Base";
 import { useNavigate } from "react-router-dom";
+import Banner from "../components/Banner/Banner";
 
 const Logout = () => {
   const navigate = useNavigate();
@@ -15,10 +16,12 @@ const Logout = () => {
 
   return (
     <Base>
-      <div class="headerAzul">
-        <h1>Logout</h1>
-        <button onClick={handleLogout} id="logout">Logout</button>
-      </div>
+      <Banner titulo={"Logout"}/>
+      <main>
+        <div>
+          <button onClick={handleLogout} id="logout">Logout</button>
+        </div>
+      </main>
     </Base>
   )
 }
