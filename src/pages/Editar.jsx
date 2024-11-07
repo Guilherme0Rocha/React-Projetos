@@ -1,7 +1,7 @@
 import Banner from "../components/Banner/Banner";
 import Base from "./Base"
 import Protegida from "./Protegida";
-
+// Editar
 const Editar = () => {
 
     return (

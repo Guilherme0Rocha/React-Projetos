@@ -2,7 +2,7 @@ import Base from "./Base"
 import { Link } from "react-router-dom";
 import Protegida from "./Protegida";
 import Banner from "../components/Banner/Banner";
-
+// Excluir
 const Excluir = () => {
 
     return (
