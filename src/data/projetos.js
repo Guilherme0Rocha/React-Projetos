@@ -5,7 +5,7 @@ const dados = [
         texto: "Um sistema para facilitar a gestão de informações escolares, como notas, frequência e turmas.",
         imagem: "https://wallpapercave.com/wp/uwp4351781.jpg",
         membros: "Carlos Silva, Marina Sousa, João Lima",
-        data: "10/02/23",
+        data: "10/02/2023",
         tecnologias: "PHP, MySQL, CSS",
     },
     {
@@ -14,7 +14,7 @@ const dados = [
         texto: "Aplicativo que mostra informações em tempo real sobre o clima e condições meteorológicas.",
         imagem: "https://wallpapercave.com/wp/wp13752071.jpg",
         membros: "Beatriz Fernandes, Lucas Amaral, Fernanda Pinto",
-        data: "15/05/23",
+        data: "15/05/2023",
         tecnologias: "React Native, API OpenWeather, JavaScript",
     },
     {
@@ -23,7 +23,7 @@ const dados = [
         texto: "Uma plataforma para vendas online com gerenciamento de produtos e integração com pagamentos.",
         imagem: "https://wallpapercave.com/wp/wp3537543.jpg",
         membros: "André Melo, Patrícia Costa, Tiago Souza",
-        data: "20/08/23",
+        data: "20/08/2023",
         tecnologias: "Node.js, Express, MongoDB",
     },
     {
@@ -32,7 +32,7 @@ const dados = [
         texto: "Aplicativo para organização de tarefas pessoais e profissionais com notificações e status.",
         imagem: "https://wallpapercave.com/wp/wp13054590.jpg",
         membros: "Rafaela Silva, Pedro Gonçalves, Vanessa Oliveira",
-        data: "30/09/23",
+        data: "30/09/2023",
         tecnologias: "Vue.js, Firebase, Bootstrap",
     },
     {
@@ -41,7 +41,7 @@ const dados = [
         texto: "Portal com publicações de notícias atualizadas, integrando API de conteúdo e layout responsivo.",
         imagem: "https://wallpapercave.com/wp/wp12182056.jpg",
         membros: "Júlia Nunes, Gabriel Ferreira, Daniel Mendes",
-        data: "10/11/23",
+        data: "10/11/2023",
         tecnologias: "Django, PostgreSQL, Tailwind CSS",
     },
     {

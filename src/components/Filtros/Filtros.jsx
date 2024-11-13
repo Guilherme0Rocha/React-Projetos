@@ -28,15 +28,6 @@ return (
                 </select>
                 </div>
                 <div class="filterBox">
-                <p class="pFilter2">Curso</p>
-                <select class="filter" id="curso" name="curso">
-                <option>Selecionar</option>
-                <option value="curso1">Curso 1</option>
-                <option value="curso2">Curso 2</option>
-                <option value="curso3">Curso 3</option>
-                </select>
-                </div>
-                <div class="filterBox">
                 <p class="pFilter2">Tecnologia</p>
                 <select class="filter" id="tecnologia" name="tecnologia">
                 <option>Selecionar</option>
