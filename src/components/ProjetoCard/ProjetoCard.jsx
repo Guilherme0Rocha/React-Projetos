@@ -4,7 +4,9 @@ import { Link } from "react-router-dom";
 const ProjetoCard = (props) => (
     <Container>
         <Titulo>{props.titulo}</Titulo>
-        <Texto>{props.texto}</Texto>
+        <Texto>Membros: {props.membros}</Texto>
+        <Texto>Tecnologias: {props.tecnologias}</Texto>
+        <Texto>{props.textoPequeno}</Texto>
         <Imagem src={props.imagem} width="90%"></Imagem>
         <Link to={`/sobre/${props.id}`} class="botao" style={{
             marginLeft: "0.9em",
@@ -15,7 +17,7 @@ const ProjetoCard = (props) => (
             justifyContent: "center",
         }}>Saber Mais</Link>
     </Container>
-    
+
 )
 
 export default ProjetoCard;

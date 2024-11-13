@@ -16,6 +16,7 @@ const Texto = styled.p`
 `;
 
 const Imagem = styled.img`
+    aspect-ratio: 16/9;
     margin-left:auto;
     margin-right:auto;
     display:block;

@@ -15,6 +15,10 @@ return (
                     id={ele.id}
                     titulo={ele.titulo}
                     texto={ele.texto}
+                    textoPequeno={ele.textoPequeno}
+                    membros={ele.membros}
+                    data={ele.data}
+                    tecnologias={ele.tecnologias}
                     imagem={ele.imagem}/>
 
                 ))
