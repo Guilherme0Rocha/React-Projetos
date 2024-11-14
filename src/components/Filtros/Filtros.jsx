@@ -140,7 +140,7 @@ return (
                     <option value="2024">2024</option>
                 </select>
                 </div>
-                <a href="/" class="clear">Limpar Filtros</a>
+                <a href="https://guilherme0rocha.github.io/React-Projetos/" class="clear">Limpar Filtros</a>
             </div>
             </form>
         </Container>
