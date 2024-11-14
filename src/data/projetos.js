@@ -56,8 +56,8 @@ const dados = [
         textoPequeno: "Gerenciamento de estoque com controle de entradas e saídas[...]",
         imagem:"https://media.istockphoto.com/id/2154841694/pt/foto/businessmen-or-manager-use-a-digital-tablet-to-check-the-stock-inventory-on-shelves-in-large.webp?a=1&b=1&s=612x612&w=0&k=20&c=thsKWd9ghwZxIeXB9JhgV90IY4q0KexziWhjW32BCPY=",
         membros: "Mariana Silva, João Ferreira, Luciana Almeida",
-        dataCriacao: "15/05/2023",
-        tecnologiasUsadas: "Python, Django, PostgreSQL"
+        data: "15/05/2023",
+        tecnologias: "Python, Django, PostgreSQL"
     },
 
     {
@@ -108,7 +108,7 @@ const dados = [
         imagem: "https://plus.unsplash.com/premium_vector-1731065128724-03f35bca9df7?q=80&w=2408&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
         membros: "João Ferreira, Gabriel da Silva, Caio de Sá",
         data: "03/06/2022",
-        tecnologias: "Node.js, Express, MongoDB (ou outro banco de dados), React ou Vue para o front-end.",
+        tecnologias: "Node.js, Express, MongoDB, React",
     },
     {
         id: 12,
@@ -118,7 +118,7 @@ const dados = [
         imagem: "https://plus.unsplash.com/premium_photo-1718641527614-8edd0ca13235?q=80&w=2012&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
         membros: "Gabriella Pereira, Juliana Souza, Carla Carvalho, Carol Cariello",
         data: "12/10/2023",
-        tecnologias: "Node.js, Socket.io para comunicação em tempo real, Express, MongoDB e React ou Vue para o front-end.",
+        tecnologias: "Node.js, Socket.io, Express, MongoDB, React",
     },
     {
         id: 13,
@@ -128,7 +128,7 @@ const dados = [
         imagem: "https://images.unsplash.com/photo-1569396116180-210c182bedb8?q=80&w=2069&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
         membros: "Guilherme Peixoto, Jéssica Nunes, Roberto Carlos, Amanda Pinho",
         data: "16/11/2023",
-        tecnologias: "Python (para lógica de cálculo), Django ou Flask no backend, e um front-end básico com HTML, CSS e JavaScript ou React.",
+        tecnologias: "Python, Django, HTML, CSS, JavaScript",
     },
     {
         id: 14,
@@ -138,7 +138,7 @@ const dados = [
         imagem: "https://plus.unsplash.com/premium_photo-1720091339077-d0f56397a0c9?q=80&w=1932&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
         membros: "Pedro Seixas, João Nascimento, João Carvalho, Pedro Costa",
         data: "23/04/2021",
-        tecnologias: "Python para análise (pandas e matplotlib ou plotly), Django para o backend, e uma biblioteca de gráficos para o front-end, como Chart.js ou D3.js.",
+        tecnologias: "Python, Django, Chart.js",
     },
     {
         id: 15,
@@ -148,7 +148,7 @@ const dados = [
         imagem: "https://plus.unsplash.com/premium_vector-1722917987960-6d87026961a9?q=80&w=2360&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
         membros: "Aloísio Chulapa, Sarah Moreira, Matheus Moreira, Eduardo Romualdo",
         data: "04/01/2024",
-        tecnologias: "PHP com Laravel (ou Python com Django), MySQL para armazenamento de dados, e um front-end com HTML, CSS, e JavaScript para tornar a interface intuitiva.",
+        tecnologias: "PHP, MySQL, HTML, CSS, JavaScript",
     },
     {
         id: 16,

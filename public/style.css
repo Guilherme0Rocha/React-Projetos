@@ -222,7 +222,7 @@ main {
 
 .detalhes {
   display:flex;
-  flex-direction: row;
+  flex-direction: column;
   flex-wrap: wrap;
   align-items: flex-start;
   justify-content: center;
@@ -250,6 +250,10 @@ main {
   border-radius:.5rem;
   margin-bottom:2rem;
   align-self: center;
+}
+
+#detalhesContainer {
+  display: flex;
 }
 
 

@@ -70,6 +70,24 @@ const Container = styled.div`
     max-width: min-content;
     }
 
+    .clear {
+    position: relative;
+    left: 0;
+    margin-left: 0px;
+    padding: 1.2rem;
+    background-color: var(--destaque2);
+    text-decoration: none;
+    color: var(--detalhe);
+    border-radius: .9em;
+    font-family: 'Krub', sans-serif;
+    font-weight: 600;
+    text-align: left;
+    height:1.5em;
+    &:hover{
+        background-color:var(--destaque)
+    }
+    }
+
     /* Estilos para dispositivos com largura de tela de até 768px (tablets e celulares) */
     @media (max-width: 768px) {
     .search {

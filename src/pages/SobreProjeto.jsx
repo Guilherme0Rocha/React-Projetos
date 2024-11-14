@@ -20,22 +20,24 @@ const SobreProjeto = () => {
                         </>
                             ) : null}
                     </div>
-                    <img id="imgProjeto" src={dados[id-1].imagem}></img>
-                    <div class="detalhes">
-                        <div class="detalhesBox">
-                            <h2>{dados[id-1].titulo}</h2>
-                            <h3 class= "title3">{dados[id-1].data}</h3>
-                            <h3 class= "title3">{dados[id-1].texto}</h3>
-                        </div>
-                        <div class="detalhesBox">
-                            <h2>Membros envolvidos:</h2>
-                            <h3 class="title3">{dados[id-1].membros}</h3>
-                        </div>
-                        <div class="detalhesBox">
-                            <h2>Tecnologias usadas:</h2>
-                            <h3 class="title3">{dados[id-1].tecnologias}</h3>
-                        </div>
+                    <div id="detalhesContainer">
+                        <img id="imgProjeto" src={dados[id-1].imagem}></img>
+                        <div class="detalhes">
+                            <div class="detalhesBox">
+                                <h2>{dados[id-1].titulo}</h2>
+                                <h3 class= "title3">Data: {dados[id-1].data}</h3>
+                                <h3 class= "title3">{dados[id-1].texto}</h3>
+                            </div>
+                            <div class="detalhesBox">
+                                <h2>Membros envolvidos:</h2>
+                                <h3 class="title3">{dados[id-1].membros}</h3>
+                            </div>
+                            <div class="detalhesBox">
+                                <h2>Tecnologias usadas:</h2>
+                                <h3 class="title3">{dados[id-1].tecnologias}</h3>
+                            </div>
 
+                        </div>
                     </div>
                 </main>
             </Base>
