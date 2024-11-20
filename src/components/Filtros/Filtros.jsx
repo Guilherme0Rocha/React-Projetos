@@ -2,7 +2,7 @@ import { useState } from "react";
 import { Container } from "./Style";
 import dados from "/src/data/projetos.js";
 
-const Filtros = ({ filtra, parametros, setParametros })=> {
+const Filtros = ({ filtra, setSelectedMembro, setSelectedTecnologia, setSelectedAno })=> {
 
 return (
     <Container>
@@ -20,7 +20,7 @@ return (
             <div class="filtersBox">
                 <div class="filterBox">
                 <p class="pFilter2">Aluno</p>
-                <select class="filter" id="aluno" name="aluno" defaultValue="Selecionar" onChange={ (e) => {parametros.set('membro', e.target.value); setParametros(parametros)}}>
+                <select class="filter" id="aluno" name="aluno" defaultValue="Selecionar" onChange={(e) => setSelectedMembro(e.target.value)}>
                     <option disabled>Selecionar</option>
                     <option value="Carlos Silva">Carlos Silva</option>
                     <option value="Marina Sousa">Marina Sousa</option>
@@ -90,7 +90,7 @@ return (
                 </div>
                 <div class="filterBox">
                 <p class="pFilter2">Tecnologia</p>
-                <select class="filter" id="tecnologia" name="tecnologia" defaultValue="Selecionar" onChange={ (e) => {parametros.set('tecnologia', e.target.value); setParametros(parametros)}}>
+                <select class="filter" id="tecnologia" name="tecnologia" defaultValue="Selecionar" onChange={(e) => setSelectedTecnologia(e.target.value)}>
                     <option disabled>Selecionar</option>
                     <option value="PHP">PHP</option>
                     <option value="MySQL">MySQL</option>
@@ -132,7 +132,7 @@ return (
                 </div>
                 <div class="filterBox">
                 <p class="pFilter2">Ano</p>
-                <select class="filter" id="ano" name="ano" defaultValue="Selecionar" onChange={ (e) => {parametros.set('ano', e.target.value); setParametros(parametros)}}>
+                <select class="filter" id="ano" name="ano" defaultValue="Selecionar" onChange={(e) => setSelectedAno(e.target.value)}>
                     <option disabled>Selecionar</option>
                     <option value="2021">2021</option>
                     <option value="2022">2022</option>
