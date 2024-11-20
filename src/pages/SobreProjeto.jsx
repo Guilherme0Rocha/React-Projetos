@@ -12,7 +12,7 @@ const SobreProjeto = () => {
             <Base>
                 <Banner titulo={dados[id-1].titulo} desc={dados[id-1].texto}/>
                 <main>
-                    <div>
+                    <div id="botoesContainer">
                         {window.sessionStorage.getItem('accessToken') ? (
                         <>
                             <Link to="/edicao" class="botao" style={{ marginLeft: '57px' }}>Editar</Link>
