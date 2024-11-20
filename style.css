@@ -226,6 +226,7 @@ main {
   flex-wrap: wrap;
   align-items: flex-start;
   justify-content: center;
+  width: 58%;
 }
 
 .detalhesBox {
@@ -254,6 +255,11 @@ main {
 
 #detalhesContainer {
   display: flex;
+  margin-left: 20px;
+}
+
+#botoesContainer {
+  margin-bottom: 20px;
 }
 
 
@@ -269,6 +275,22 @@ main {
 
   #imgProjeto {
     width:60%;
+  }
+
+  #detalhesContainer {
+    flex-direction: column;
+    align-content: center;
+    margin-left: 0px;
+    align-items: center;
+  }
+
+  .detalhesBox {
+    margin-left: 0px;
+  }
+
+  .detalhes {
+    width: 80%;
+    align-items: center;
   }
 }
 
