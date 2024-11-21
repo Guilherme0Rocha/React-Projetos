@@ -29,3 +29,7 @@ Utilize o comando `npm run build` para construir uma versão pronta para produç
 ## Repositório de documentação                                               
 
 [Repositório](https://github.com/Guilherme0Rocha/Projeto-Front-End/tree/main)
+
+## Apresentação
+
+[Apresentação Canva](https://www.canva.com/design/DAGWeKRt-s0/vY3jdaV8_LOa_ipNfi2STQ/edit?utm_content=DAGWeKRt-s0&utm_campaign=designshare&utm_medium=link2&utm_source=sharebutton)
